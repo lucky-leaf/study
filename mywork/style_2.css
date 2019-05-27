@@ -1,0 +1,33 @@
+body
+{
+     width: 90%;
+     max-width: 900px;
+     margin: 0 auto;
+     background-color: #fff;
+}
+p{
+     font-size:18px;
+     margin-top: 10px;
+     margin-bottom: 10px;  
+}
+.tit{
+     font-size: 32px;
+     float: left;
+     width: 23%;
+     margin: 0 auto;
+     padding-top: 100px;
+     padding-bottom: 67%;
+     text-align:center;
+     background-color:#82acff;
+     color:#fff; 
+}
+.tit2{
+     font-weight:bold;
+     display:block;
+}
+.con{
+     float:right;
+     width:73%;
+     padding-bottom:20px; 
+}
+
