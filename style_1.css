@@ -1,0 +1,16 @@
+body{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.tit{
+    font-size: 32px;
+}
+.tit2{
+    font-size:18px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    display:block;
+    font-weight:bold;
+}
