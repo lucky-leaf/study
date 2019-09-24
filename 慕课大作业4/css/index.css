@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0;}
+html,body{width: 100%;height: 100%;overflow: hidden;}
+/* 天空 */
+.sky{
+    height:60%;
+    background: -webkit-linear-gradient( rgb(196, 228, 253),#fff);
+    background:    -moz-linear-gradient( rgb(196, 228, 253),#fff);
+    background:      -o-linear-gradient( rgb(196, 228, 253),#fff);
+    background:         linear-gradient( rgb(196, 228, 253),#fff);
+    /* 兼容性 */
+}
+/* 草地 */
+.meadow{
+    height:40%;
+    background: -webkit-linear-gradient(#fff, rgb(148, 190, 89));
+    background:    -moz-linear-gradient(#fff, rgb(148, 190, 89));
+    background:      -o-linear-gradient(#fff, rgb(148, 190, 89));
+    background:         linear-gradient(#fff, rgb(148, 190, 89));
+    /* 兼容性 */
+}
+/* 云朵 */
+.sky > div{
+    position: absolute;
+    width:200px;
+    height:60px;
+    background: #fff;
+    border-radius: 14%/50%;
+}
+.sky > div::before,
+.sky > div::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background:#fff;
+}
+.sky > div::before{
+    width:70px;
+    height:90px;
+    left: 8%;
+    top: -28%;
+    -webkit-transform: rotate(-30deg);
+       -moz-transform: rotate(-30deg);
+         -o-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    /* 兼容性 */
+    border-radius: 50%/30%;
+}
+.sky > div::after{
+    left: 30%;
+    top: -88%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+/* 云朵1动画 */
+.cloud1{
+    top:20%;
+    right: -30%;
+    -webkit-transform: scale(1.3);
+       -moz-transform: scale(1.3);
+         -o-transform: scale(1.3);
+            transform: scale(1.3);
+    -webkit-animation: cloud 10s linear infinite;
+       -moz-animation: cloud 10s linear infinite;
+         -o-animation: cloud 10s linear infinite;
+            animation: cloud 10s linear infinite;
+    /* 兼容性 */
+}
+/* 云朵2动画 */
+.cloud2{
+    top:5%;
+    right: -30%;
+    opacity: .8;
+    -webkit-animation: cloud 14s linear infinite;
+       -moz-animation: cloud 14s linear infinite;
+         -o-animation: cloud 14s linear infinite;
+            animation: cloud 14s linear infinite;
+    /* 兼容性 */
+}
+/* 云朵3动画 */
+.cloud3{
+    top:30%;
+    right: -30%;
+    opacity: .8;
+    -webkit-transform: scale(.8);
+       -moz-transform: scale(.8);
+         -o-transform: scale(.8);
+            transform: scale(.8);
+    -webkit-animation: cloud 12s linear infinite;
+       -moz-animation: cloud 12s linear infinite;
+         -o-animation: cloud 12s linear infinite;
+            animation: cloud 12s linear infinite;
+    /* 兼容性 */
+}
+/* 云朵4动画 */
+.cloud4{
+    top:10%;
+    right: -30%;
+    opacity: .7;
+    -webkit-transform: scale(.7);
+       -moz-transform: scale(.7);
+         -o-transform: scale(.7);
+            transform: scale(.7);
+    -webkit-animation: cloud 13s linear infinite;
+       -moz-animation: cloud 13s linear infinite;
+         -o-animation: cloud 13s linear infinite;
+            animation: cloud 13s linear infinite;
+    /* 兼容性 */
+}
+/* 云朵5动画 */
+.cloud5{
+    top:15%;
+    right: -30%;
+    opacity: .6;
+    -webkit-transform: scale(.6);
+       -moz-transform: scale(.6);
+         -o-transform: scale(.6);
+            transform: scale(.6);
+    -webkit-animation: cloud 16s linear infinite;
+       -moz-animation: cloud 16s linear infinite;
+         -o-animation: cloud 16s linear infinite;
+            animation: cloud 16s linear infinite;
+    /* 兼容性 */
+}
+@-webkit-keyframes cloud{
+    from{right: -30%;}
+    to{right: 100%;}
+}
+@-moz-keyframes cloud{
+    from{right: -30%;}
+    to{right: 100%;}
+}
+@-o-keyframes cloud{
+    from{right: -30%;}
+    to{right: 100%;}
+}
+@keyframes cloud{
+    from{right: -30%;}
+    to{right: 100%;}
+}
+/* 兔子 */
+img{
+    width:190px;
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+}

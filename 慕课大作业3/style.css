@@ -1,0 +1,24 @@
+/* all */
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: #000; }
+img { border:none; }
+/* 顶部 */
+thead { height: 60px; background: rgb(22, 155,213); }
+thead img { margin: 10px 0; vertical-align: middle; }
+/* 主体 */
+tbody table td { border-collapse:collapse; border: 2px solid rgb(204,204,204);}
+/* 主体左侧 */
+tbody tr { width: 100%; }
+tbody tr .left { width: 12%; text-align: left; }
+tbody tr .left p { margin-top:20px; margin-left: 10px; }
+tbody tr .left p a:hover { font-weight: bold; }
+/* 主体右侧 */
+tbody .right { width: 88%; }
+tbody .right table { width: 100%; }
+tbody .right .table2 tr td,tbody .right .table3 tr td { padding-left:10px; }
+tbody .right table tr td {height: 50px; overflow: hidden; }
+tbody .right table:last-of-type tr { text-align: center; vertical-align: middle; }
+tbody .right .table4 tr td { height: 54px; }
+tbody .right .table4 tr td img { width: 52px; }
+/* 底部 */
+tfoot td { height: 60px; background: rgb(22,155,213); text-align: center; line-height: 60px; }

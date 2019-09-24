@@ -1,0 +1,285 @@
+/* 公共 */
+body{
+    font: 16px Microsoft YaHei UI;
+}
+.header,
+.footer{
+    background: #07cbc9;
+    height: 80px;
+    width: 100%;
+}
+.top p{
+    width: 510px;
+    margin: 5px auto;
+    color: rgb(164, 168, 168);
+}
+.line{
+    width: 40px;
+    height: 10px;
+    border-top: 2px #07cbc9 solid;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* 头部 */
+.header{
+    position:fixed;
+    z-index: 10;
+    min-width: 1200px;
+}
+.header .logo{
+    float:left;
+    display: block;
+    width: 300px;
+    height: 80px;
+    margin-top:16px;
+    margin-left: 100px;
+}
+.header ul{
+    float: right;
+    margin-right:100px;
+}
+.header ul li{
+    display: block;
+    float: left;
+    line-height:80px;
+    margin-right: 20px;
+    font-weight:bold;
+}
+.header ul li:hover{
+    background-color: orange;
+}
+/* 主体 */
+/* banner区 */
+.main .banner{
+    width:100%;
+}
+.main .banner img{
+    width: 100%;
+    height: 800px;
+}
+.main .banner-layer{
+    position:absolute;
+    opacity: 0.3;
+	top:0;
+	background:#000;
+    width: 100%;
+    height: 800px;
+}
+.main .banner-top{
+    position: absolute;
+    top:800px;
+    width:509px;
+    height:308px;
+    margin-top:-554px;
+    z-index:2;
+    right: 50%;
+    margin-right:-254px;  
+}
+.main .banner-top form input{
+    width:505px;
+    height:39px;
+    margin: 20px auto;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgb(164, 168, 168);
+}
+.main .banner-top form input:hover,
+.main .banner-top form textarea:hover{
+    border-color: #07cbc9;
+}
+.main .banner-top form textarea{
+    width: 505px;
+    height: 115px;
+    background: transparent;
+    line-height: 39px;
+    color: #fff;
+    border: 2px solid rgb(164, 168, 168);
+    margin:20px auto;
+}
+.main .banner-top form input[name="submit"]{
+    width:127px;
+    margin-left:189px;
+}
+.main .banner-top form input[name="submit"]:hover{
+    background: #07cbc9;
+    border:none;
+    color: #fff;
+}
+/* about区 */
+.main .about .top,
+.main .gallery .top{
+    text-align: center;
+    margin-top:50px;
+}
+.main .about .middle{
+    height:430px;
+    width: 1200px;
+    margin: 20px auto;
+}
+.main .about .middle .left{
+    float: left;
+    width: 370px;
+    margin-left: 100px;
+    position: relative;
+}
+.main .about .middle .left .left-1{
+    width: 185px;
+}
+.main .about .middle .left .left-2{
+    height:166px;
+    border: 1px solid rgb(164, 168, 168);
+    padding:40px 30px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 310px;
+    position: absolute;
+    z-index: 2;
+}
+.main .about .middle .left input[name="submit"]{
+    width: 102px;
+    height:45px;
+    background: #000;
+    color: #fff;
+    margin-top:10px;
+    border:1px solid #000;
+}
+.main .about .middle .left input[name="submit"]:hover{
+    background: transparent;
+    color: #000;
+}
+.main .about .middle .center{
+    width: 568px;
+    height:380px;
+    float: left;
+}
+.main .about .middle .center img{
+    width: 568px;
+    height: 380px;   
+    margin-left:-284px;
+    position: absolute;
+    left: 50%;  
+}
+.main .about .middle .right{
+    float: left;
+    margin-left:-120px;
+}
+.main .about .middle .right .rightbox{
+    border: 1px solid #07cbc9;
+    width: 238px;
+    height: 144px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main .about .middle .right .rightbox .word1{
+    font: bold 23px Microsoft YaHei UI;
+    line-height: 62px;
+}
+.main .about .middle .right .rightbox .word2{
+    line-height: 62px;
+    font-size: 20px;
+}
+/* about--图片混排区 */
+.main .about .bottom{
+    height:800px;
+}
+.main .about .bottom .pic,
+.main .about .bottom .word{
+    float: left;  
+}
+.main .about .bottom .pic{
+    width: 25%;
+    height:396px;
+}
+.main .about .bottom .pic img{
+    width:100%;
+    height:396px;
+}
+.main .about .bottom .pic .pic-layer1{
+    float: left;
+    width: 0; 
+    height: 0;
+    position: relative;
+    margin-left:calc(100% - 80px);
+    margin-top:-238px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: transparent #07cbc9 transparent transparent;
+    z-index: 20;
+}
+.main .about .bottom .pic .pic-layer2{
+    float: left;
+    width: 0; 
+    height: 0;
+    position: relative;
+    margin-top:-238px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: transparent transparent transparent #07cbc9;
+    z-index: 20;
+}
+.main .about .bottom .word{
+    background: #07cbc9;
+    color: #fff;
+    width: calc(25% - 100px);
+    height: calc(396px - 80px);
+    padding: 40px 50px;
+    position: relative;
+} 
+/* 用margin，padding都会导致图文错位，于是采用了CSS3的calc（），老师如果有更好的解决方法也可以告诉我 */
+.main .about .bottom .word div{
+    margin-top:20px;
+}
+.main .about .bottom .word input[name="submit"]{
+    width: 102px;
+    height:45px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -51px;
+    margin-top:40px;
+    text-align: center;
+    border:1px solid #000;
+   
+}
+.main .about .bottom .word input[name="submit"]:hover{
+    background: transparent;   
+}
+
+/* gallery区 */
+
+.main .gallery .bottom{
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+}
+.main .gallery .bottom dl{
+    margin: 20px;
+    overflow: hidden;
+    zoom: 1;
+}
+.main .gallery .bottom dl,
+.main .gallery .bottom dl dt img,
+.main .gallery .bottom dl dd{
+    float: left;
+    
+}
+.main .gallery .bottom dl dt{
+    width: 360px;
+}
+.main .gallery .bottom dl dt img{   
+    height: 240px;
+}
+.main .gallery .bottom dl dd{
+    width: 350px;
+    height: 64px;
+    line-height:64px;
+    background: #000;
+    color: #fff;
+    padding-left: 10px;
+}
+/* 底部 */
+.footer{
+    text-align: center;
+    line-height:80px;
+    color:#fff;
+}

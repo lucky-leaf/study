@@ -1,0 +1,10 @@
+*{margin: 0;padding: 0;}
+li{list-style:none;}
+img{border:none;}
+a{text-decoration:none; color:#fff;}
+textarea{resize: none;}
+input,textarea{outline: none; border:none;}
+
+/*清除浮动*/
+.clearfix:after{content:"";display:block; clear:both;}
+.clearfix{zoom:1;}
